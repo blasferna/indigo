@@ -1,7 +1,7 @@
 ---
 title: "Django Calculation, Make simple calculations in django forms. "
 layout: post
-date: 2022-04-23 12:00
+date: 2022-04-11 12:00
 tag: jekyll
 image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: false
