@@ -1,20 +1,20 @@
 ---
-title: "Django Calculation, Make simple calculations in django forms. "
+title: "django-calculation, Make simple calculations in django forms."
 layout: post
 date: 2022-04-11 12:00
-tag: jekyll
-image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
+tag: django
+image: false
 headerImage: false
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "Make simple calculations in your django forms."
+description: "The app provide a Django Widget that derives its value from a expression defined in the widget instance."
 category: project
 author: blasferna
 externalLink: false
 ---
 
 
-Make simple calculations in your django forms using django-calculation. This app provide a Django Widget that derives its value from a expression defined in the widget instance.
+Make simple calculations in your django forms using [django-calculation](https://github.com/blasferna/django-calculation). This app provide a Django Widget that derives its value from a expression defined in the widget instance.
 
 ---
 
