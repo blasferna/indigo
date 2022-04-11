@@ -16,7 +16,7 @@ resume: false
 resume-external: false
 resume-url: https://google.com/?q=my+resume
 
-url: http://blasferna.com
+url: https://blasferna.com
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -80,11 +80,11 @@ pagination:
   permalink: "/:num/" # pagination link that will be appended
 
 # if you don't need projects, comment the *projects* configs below
-projects: false
+projects: true
 
 # if you don't need "about" or "blog", comment them out below
-about: false
-blog: false
+about: true
+blog: true
 
 # do you want to show the "read time" of the posts?
 read-time: true
