@@ -114,3 +114,57 @@ For that I had to apply some improvements such as including it in the Python PyP
 ```bash
 pip install django-calculation 
 ```
+
+Add `calculation` in `INSTALLED_APPS`
+
+```python
+INSTALLED_APPS = [
+    ...
+    'calculation',
+]
+```
+
+## Usage
+
+Import `calculation` and complete the definition.
+
+### Example
+
+Using `FormulaInput` widget
+
+```python
+from django import forms
+
+import calculation
+
+
+class TestForm(forms.Form):
+    quantity = forms.DecimalField()
+    price = forms.DecimalField()
+    amount = forms.DecimalField(
+        widget=calculation.FormulaInput('quantity*price') # <- using single math expression
+    )
+    apply_taxes = forms.BooleanField(initial=True)
+    tax = forms.DecimalField(
+        # using math expression and javascript functions.
+        widget=calculation.FormulaInput('apply_taxes ? parseFloat(amount/11).toFixed(2) : 0.0') 
+    )
+```
+
+`django-calculation` works with static files and therefore it is necessary to include the media of the form in the template file.
+
+```django
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+
+{{ form.media }}
+```
+
+In action:
+
+
+![calculation](https://user-images.githubusercontent.com/8385910/142947517-49a5d6a0-6a6c-41d6-8f14-a140ad44fa1e.gif)
+
