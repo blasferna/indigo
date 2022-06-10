@@ -39,9 +39,7 @@ It currently supports formula-type expressions, as well as addition operations, 
 
 To be honest, I'm too lazy to write JavaScript code in templates that have forms that require some kind of mathematical calculation. In a medium or large project the need can be several hundred or thousands of lines of code.
 
-As I don't have the need to implement advanced frontend libraries, such as React, Vue or other available since Django's MTV adapts quite well to the projects I participate in.
-
-Looking for a way to avoid writing JavaScript code for those situations, I decided to try something similar to what Salesforce offers with Formula Field, but in this case something much more practical focused on what I needed.
+As I don't have the need to implement advanced frontend libraries, such as React, Vue or other available since Django's MTV adapts quite well to the projects I participate in. Looking for a way to avoid writing JavaScript code for those situations, I decided to try something similar to what Salesforce offers with FormulaField, but in this case something much more practical focused on what I needed.
 
 For several years I have been a user of Oracle Forms 6i, which had something very practical: Indicate that the content of a text box be generated from the execution of a formula and something very interesting happened when you referenced another text box of the same type , the execution respected the dependency of the content of the formula, that is, it was executed in cascade.
 
@@ -103,12 +101,6 @@ Then I had to find those fields that are going to execute the calculations, that
 Having the source fields, all that remains is to add the event that would trigger the executions, I decided to use the `blur` event because it is triggered after losing the focus.
 
 
-## Open Source
-
-I was using it for several weeks adjusting some details and after a while I decided to release the project with the hope that it will be useful for other people since for me it is very practical.
-
-For that I had to apply some improvements such as including it in the Python PyPI package manager.
-
 ## Installation
 
 ```bash
@@ -167,4 +159,20 @@ In action:
 
 
 ![calculation](https://user-images.githubusercontent.com/8385910/142947517-49a5d6a0-6a6c-41d6-8f14-a140ad44fa1e.gif)
+
+
+## Open Source
+
+I was using it for several weeks adjusting some details and after a while I decided to release the project with the hope that it will be useful for other people since for me it is very practical.
+
+For that I had to apply some improvements such as including it in the Python PyPI package manager.
+
+
+### Repercussion
+
+It wasn't long after the first release that I received some emails from users asking about some details of the library, that was exciting.
+
+### Contribute
+
+If you have any ideas on how to improve the library or found some bugs, feel free to open an issue at [https://github.com/blasferna/django-calculation/issues](https://github.com/blasferna/django-calculation/issues). 
 
