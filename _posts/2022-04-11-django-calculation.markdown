@@ -1,5 +1,5 @@
 ---
-title: "django-calculation, Make simple calculations in django forms."
+title: "django-calculation, Make simple calculations in Django forms."
 layout: post
 date: 2022-04-11 12:00
 tag: django
