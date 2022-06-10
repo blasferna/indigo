@@ -146,13 +146,14 @@ class TestForm(forms.Form):
 `django-calculation` works with static files and therefore it is necessary to include the media of the form in the template file.
 
 ```django
+{% raw %}
 <form method="post">
     {% csrf_token %}
     {{ form }}
     <input type="submit" value="Submit">
 </form>
 
-{{ form.media }}
+{{ form.media }}{% endraw %}
 ```
 
 In action:
