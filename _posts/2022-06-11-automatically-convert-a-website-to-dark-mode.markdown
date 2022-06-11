@@ -1,7 +1,7 @@
 ---
 title: "Automatically convert a website to dark mode."
 layout: post
-date: 2022-06-11 12:00
+date: 2022-06-11 07:00
 tag: 
   - frontend
   - javascript
@@ -10,7 +10,7 @@ headerImage: false
 projects: false
 hidden: false # don't count this post in blog pagination
 description: "A quick way to implement dark mode to a website."
-category: post
+category: blog
 author: blasferna
 externalLink: false
 ---
