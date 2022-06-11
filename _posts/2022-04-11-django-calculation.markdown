@@ -6,8 +6,8 @@ tag:
   - django
   - python
   - javascript
-image: false
-headerImage: /assets/images/django-logo.png
+image: /assets/images/django-logo.png
+headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
 description: "The app provide a Django Widget that derives its value from a expression defined in the widget instance."
@@ -17,7 +17,7 @@ externalLink: false
 ---
 
 
-Make simple calculations in your Django forms using django-calculation. [django-calculation](https://github.com/blasferna/django-calculation). 
+Make simple calculations in your Django forms using [django-calculation](https://github.com/blasferna/django-calculation). 
 
 ## How does it work?
 
