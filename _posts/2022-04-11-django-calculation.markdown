@@ -2,9 +2,12 @@
 title: "Make simple calculations in Django forms using django-calculation."
 layout: post
 date: 2022-04-11 12:00
-tag: django
+tag: 
+  - django
+  - python
+  - javascript
 image: false
-headerImage: false
+headerImage: /assets/images/django-logo.png
 projects: true
 hidden: true # don't count this post in blog pagination
 description: "The app provide a Django Widget that derives its value from a expression defined in the widget instance."
@@ -24,11 +27,11 @@ A basic example would be performing a multiplication to calculate the total pric
 
 
 
-```python
+{% highlight python %}
 amount = forms.DecimalField( 
     widget=calculation.FormulaInput('quantity*price')  
 ) 
-```
+{% endhighlight %}
 
 At runtime, the expression `quantity*price` is replaced by the values ​​corresponding to the fields of the same name present in the form.
 
@@ -67,7 +70,7 @@ To determine the execution order I had to use an algorithm that consists of givi
 
 Code used to calculate the weight of the fields
 
-```javascript
+{% highlight javascript %}
 function calculateWeight(obj, weight = 0) {
     weight++;
     for (let index = 0; index < obj.dependencies.length; index++) {
@@ -76,11 +79,11 @@ function calculateWeight(obj, weight = 0) {
     }
     return weight;
 }
-```
+{% endhighlight %}
 
 Code to order the execution
 
-```javascript
+{% highlight javascript %}
 function sortExecution() {
     for (let index = 0; index < calculatedFields.length; index++) {
         let obj = calculatedFields[index];
@@ -90,7 +93,7 @@ function sortExecution() {
         return a.weight - b.weight;
     });
 }
-```
+{% endhighlight %}
 
 4. Find source fields
 
@@ -103,18 +106,18 @@ Having the source fields, all that remains is to add the event that would trigge
 
 ## Installation
 
-```bash
+{% highlight raw %}
 pip install django-calculation 
-```
+{% endhighlight %}
 
 Add `calculation` in `INSTALLED_APPS`
 
-```python
+{% highlight python %}
 INSTALLED_APPS = [
     ...
     'calculation',
 ]
-```
+{% endhighlight %}
 
 ## Usage
 
@@ -124,7 +127,7 @@ Import `calculation` and complete the definition.
 
 Using `FormulaInput` widget
 
-```python
+{% highlight python %}
 from django import forms
 
 import calculation
@@ -141,12 +144,11 @@ class TestForm(forms.Form):
         # using math expression and javascript functions.
         widget=calculation.FormulaInput('apply_taxes ? parseFloat(amount/11).toFixed(2) : 0.0') 
     )
-```
+{% endhighlight %}
 
 `django-calculation` works with static files and therefore it is necessary to include the media of the form in the template file.
 
-```django
-{% raw %}
+{% highlight python %}{% raw %}
 <form method="post">
     {% csrf_token %}
     {{ form }}
@@ -154,7 +156,7 @@ class TestForm(forms.Form):
 </form>
 
 {{ form.media }}{% endraw %}
-```
+{% endhighlight %}
 
 In action:
 
