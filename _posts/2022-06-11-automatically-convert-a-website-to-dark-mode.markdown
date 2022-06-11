@@ -15,8 +15,9 @@ author: blasferna
 externalLink: false
 ---
 
+![Screenshot](https://user-images.githubusercontent.com/8385910/173192842-488c18b5-16e9-42bd-8af8-f296502385dc.png)
 
-A few days ago I had the need to apply the dark mode to a website and I didn't want to spend a lot of time in the conversion process, so I started looking for a utility to facilitate the process, luckily I found https://darkreader. org/ an open source browser plugin that automatically applies dark mode.
+A few days ago I had the need to apply the dark mode to a website and I didn't want to spend a lot of time in the conversion process, so I started looking for a utility to facilitate the process, luckily I found [Darkreader](https://github.com/darkreader/darkreader) an open source browser plugin that automatically applies dark mode.
 
 Inquiring into the functionalities it offers, I found that it can be applied to a website using it as a javascript library, directly from the CDN or installed from NPM.
 
