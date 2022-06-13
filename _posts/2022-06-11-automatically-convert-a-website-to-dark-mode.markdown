@@ -19,7 +19,7 @@ externalLink: false
 
 A few days ago I had the need to apply the dark mode to a website and I didn't want to spend a lot of time in the conversion process, so I started looking for a utility to facilitate the process, luckily I found [Darkreader](https://github.com/darkreader/darkreader) an open source browser plugin that automatically applies dark mode.
 
-Inquiring into the functionalities it offers, I found that it can be applied to a website using it as a javascript library, directly from the CDN or installed from NPM.
+Inquiring into the functionalities it offers, I found that it can be applied to a website using it as a javascript library, directly from a CDN or installed from NPM.
 
 
 Today I bring a guide on how to apply it using its CDN version.
@@ -30,7 +30,7 @@ Today I bring a guide on how to apply it using its CDN version.
 
 ## Converting to dark mode
 
-Add the dependency in the head of the Html
+Add the dependency in the head of the HTML
 
 {% highlight html %}
 <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.46/darkreader.min.js"></script>
@@ -121,6 +121,12 @@ The following block of code allows the change to be applied safely without the u
 Create a `dark_mode.js` file to include all the code explained above:
 
 {% gist blasferna/8c9f4848f9b74a700ab2cddf4049bb6a %}
+
+Finally add the `dark_mode.js` in the HTML head block.
+
+{% highlight html %}
+<script type="text/javascript"  src="./dark_mode.js"></script>
+{% endhighlight %}
 
 
 ## Demo
