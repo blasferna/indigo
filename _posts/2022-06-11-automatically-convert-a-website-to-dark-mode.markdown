@@ -131,7 +131,7 @@ Finally add the `dark_mode.js` in the HTML head block.
 
 ## Demo
 
-You can see the code in action by accessing the following link [Darkreader](https://blasferna.github.io/auto-dark-mode/)
+You can see the code in action by accessing the following link [https://blasferna.github.io/auto-dark-mode/](https://blasferna.github.io/auto-dark-mode/)
 
 ### Source
 
