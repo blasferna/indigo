@@ -52,13 +52,13 @@ github: blasferna
 # lanyrd: mylanyrd
 email: blasferna@gmail.com
 
-#authors:
-#  johndoe:
-#    name: John Doe
-#    bio: A Man who travels the world eating noodles
-#    external-image: false
-#    picture: assets/images/profile.jpg
-#    twitter: johndoe
+authors:
+  blasferna:
+    name: Blas Isaias Fernández
+    bio: Software Engineer, 💗 Python, Java, Postgresql, MySQL, Oracle and much more.
+    external-image: false
+    picture: assets/images/profile.jpg
+    twitter: blasfernac
 #  jamesfoster:
 #    name: James Foster
 #    bio: A Man who develops software with coffee
