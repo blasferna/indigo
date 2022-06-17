@@ -56,15 +56,15 @@ The idea is quite simple, in theory, to execute the expressions indicated in the
 
 After thinking about the flow for several days, I came to the conclusion that it could work as follows.
 
-1. Find Formulated Fields
+1- Find Formulated Fields:
 
 The first thing would be to identify the fields that contain formulas, I decided to apply the search according to the `data-calculation` attribute.
 
-2. Find dependencies
+2- Find dependencies:
 
 Then, find all the fields referenced in the formulas, to do this he had to go through all the formulated fields and analyze each of the formulas.
 
-3. Determine the order of execution
+3- Determine the order of execution:
 
 To determine the execution order I had to use an algorithm that consists of giving a weight to each formulated field based on the number of times it was referenced, the more times it is referenced, the greater its weight would be and therefore its execution would be after considered fields lighter.
 
@@ -95,11 +95,11 @@ function sortExecution() {
 }
 {% endhighlight %}
 
-4. Find source fields
+4- Find source fields:
 
 Then I had to find those fields that are going to execute the calculations, that is, the source fields, those that, when they undergo changes, will execute the calculations in the places where they have been referenced.
 
-5. Add events
+5- Add events:
 
 Having the source fields, all that remains is to add the event that would trigger the executions, I decided to use the `blur` event because it is triggered after losing the focus.
 
